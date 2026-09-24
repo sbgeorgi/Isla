@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://images.pexels.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--paper:#f5f3ed;--white:#fffcf7;--ink:#253d34;--muted:#626e60;--line:#d4d8cd;--sage:#dfe5d9;--sea:#d5e5e0;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Manrope',Arial,sans-serif;--gutter:6.25vw;--nav:84px;--scene-vh:100svh;--ease:cubic-bezier(.22,1,.36,1)}
+    :root{--paper:#f5f3ed;--white:#fffcf7;--ink:#253d34;--muted:#626e60;--line:#d4d8cd;--sage:#dfe5d9;--sea:#d5e5e0;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Manrope',Arial,sans-serif;--gutter:6.25vw;--nav:84px;--scene-vh:100vh;--ease:cubic-bezier(.22,1,.36,1)}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth;scroll-padding-top:var(--nav);scrollbar-gutter:stable}
     body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.7;overflow-x:clip;-webkit-font-smoothing:antialiased}
@@ -306,8 +306,8 @@
     @media(max-width:767px) and (max-height:740px){.hero{min-height:540px}.hero-content{padding-top:36px;padding-bottom:36px}.hero-eyebrow{margin-bottom:29px}.hero-brand{margin-bottom:29px}.arch-sticky{min-height:0;padding-top:23px;padding-bottom:18px}.arch-copy .section-title{font-size:33px}.arch-copy .eyebrow{margin-bottom:10px}.arch-copy .body-copy{font-size:9px;margin-top:9px}.arch-nav{margin-top:12px}.arch-view{min-height:0}.map-sticky,.story-sticky{min-height:0}.map-copy{top:25px}.map-copy h3{font-size:43px}.map-chapter{margin-bottom:10px}.map-coordinates{margin-top:10px}.model-bottom .eyebrow{font-size:6px}.model-hint{font-size:7px}}
     @media(max-height:520px) and (min-width:600px){:root{--nav:62px}.hero{min-height:530px}.arch-sticky{min-height:0;padding-top:18px;padding-bottom:18px;grid-template-columns:35% 65%;grid-template-rows:1fr}.arch-copy .section-title{font-size:31px}.arch-copy .eyebrow{font-size:7px;margin-bottom:12px}.arch-copy .body-copy{display:none}.arch-nav{display:grid;gap:0;margin-top:18px;max-width:190px}.arch-step{min-height:35px;padding:8px 0;font-size:9px}.arch-view{width:auto;min-height:0;margin:0 -3vw 0 0}.model-bottom{left:5%;right:2%}.model-bottom .eyebrow{display:none}.map-sticky,.story-sticky{min-height:0}.map-copy{top:8%;max-width:220px}.map-copy h3{font-size:38px}.map-copy p{font-size:9px;max-width:210px}.map-chapter{font-size:8px;margin-bottom:10px}.map-coordinates{font-size:8px;margin-top:13px}.map-wash{background:linear-gradient(90deg,#d5e5e0 0%,#d5e5e0ed 24%,#d5e5e000 62%)}.map-bottom{bottom:43px}.map-disclaimer{bottom:10px;max-width:65%}.map-step{padding-top:10px;min-height:40px}.story-content{bottom:92px}.story-content h2{font-size:51px}.story-content p{margin-top:10px}.story-count{margin-bottom:12px}.story-tabs{bottom:22px}.story-tab{padding-top:8px}.story-top{top:20px}.story-top .gallery-open{width:34px;height:34px}.mobile-menu{padding-top:25px;overflow-y:auto}.mobile-menu nav a{font-size:30px;line-height:1.5}.mobile-menu .body-copy{display:none}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none}.hero-media{transform:none!important}.story-image img{transform:none!important}}
-    .architecture{height:280svh;position:relative;margin-top:70px}
-    .architecture-sticky{position:-webkit-sticky;position:sticky;top:var(--header);height:calc(var(--scene-vh) - var(--header));min-height:580px;display:grid;grid-template-columns:.8fr 1.7fr;gap:4%;align-items:center;padding-top:40px;padding-bottom:40px;overflow:hidden}
+    .architecture{height:280vh;height:280svh;position:relative;margin-top:70px}
+    .architecture-sticky{position:-webkit-sticky;position:sticky;top:var(--header);height:calc(100vh - var(--header));height:calc(var(--scene-vh) - var(--header));min-height:580px;display:grid;grid-template-columns:.8fr 1.7fr;gap:4%;align-items:center;padding-top:40px;padding-bottom:40px;overflow:hidden}
     .architecture-copy{position:relative;z-index:2;align-self:center}
     .architecture-copy h2{font-size:clamp(48px,4.45vw,70px);margin:32px 0 21px}
     .architecture-copy h2 em{color:#73816b}
@@ -344,7 +344,7 @@
     .scene-tabs button span{color:var(--accent);font-size:8px;margin-right:8px}
     .house-range{display:block;width:100%;accent-color:var(--ink);height:18px;margin:4px 0 0;cursor:ew-resize}
     .model-status{font-size:9px;color:var(--muted);margin-top:8px;min-height:12px}
-    .map-section{height:335svh;position:relative;background:var(--sage);margin-top:60px}
+    .map-section{height:335vh;height:335svh;position:relative;background:var(--sage);margin-top:60px}
     .map-sticky{height:calc(var(--scene-vh) - var(--header));min-height:600px;position:-webkit-sticky;position:sticky;top:var(--header);overflow:hidden;isolation:isolate}
     .map-canvas{position:absolute;inset:0;height:100%;width:100%}
     .map-wash{position:absolute;inset:0;background:linear-gradient(90deg,var(--sage) 0%,rgba(233,237,228,.96) 21%,rgba(233,237,228,.8) 33%,transparent 57%);pointer-events:none}
@@ -380,8 +380,8 @@
     .mobile-menu{overflow-y:auto}
     .mobile-menu nav a{font-size:clamp(27px,5vw,39px);line-height:1.28;padding:6px 0}
     .frames-intro{display:flex;align-items:end;justify-content:space-between;gap:40px;padding-bottom:55px}.frames-intro .eyebrow{margin-bottom:23px}.frames-intro .body-copy{max-width:270px}
-    .frames-scroll{height:315svh;position:relative}.frames-sticky{position:-webkit-sticky;position:sticky;top:var(--nav);height:calc(var(--scene-vh) - var(--nav));min-height:500px;background:#24433e;overflow:hidden}
-    .frames-panel{position:absolute;inset:0;clip-path:inset(0 100% 0 0);will-change:clip-path}.frames-panel:first-child{clip-path:none}.frames-panel:nth-child(3){clip-path:inset(0 0 0 100%)}.frames-panel img{height:100%;width:100%;object-fit:cover;transform:scale(1.07);will-change:transform}.frames-panel:nth-child(2) img{object-position:center 55%}.frames-panel:nth-child(3) img{object-position:center 52%}
+    .frames-scroll{height:315vh;height:315svh;position:relative}.frames-sticky{position:-webkit-sticky;position:sticky;top:var(--nav);height:calc(100vh - var(--nav));height:calc(var(--scene-vh) - var(--nav));min-height:500px;background:#24433e;overflow:hidden}
+    .frames-panel{position:absolute;inset:0;-webkit-clip-path:inset(0 100% 0 0);clip-path:inset(0 100% 0 0);will-change:clip-path;-webkit-backface-visibility:hidden;backface-visibility:hidden}.frames-panel:first-child{-webkit-clip-path:none;clip-path:none}.frames-panel:nth-child(3){-webkit-clip-path:inset(0 0 0 100%);clip-path:inset(0 0 0 100%)}.frames-panel img{height:100%;width:100%;object-fit:cover;transform:scale(1.07);will-change:transform}.frames-panel:nth-child(2) img{object-position:center 55%}.frames-panel:nth-child(3) img{object-position:center 52%}
     .frames-panel:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,33,30,.57),rgba(12,33,30,.04) 76%),linear-gradient(0deg,rgba(12,33,30,.22),transparent 42%);pointer-events:none}
     .frames-panel .frames-copy{display:none}.frames-copy{position:absolute;z-index:4;left:var(--gutter);bottom:12%;color:white;max-width:700px}.frames-copy>span{font-size:10px;letter-spacing:.17em}.frames-copy h3{font:400 clamp(66px,8vw,124px)/.93 var(--serif);letter-spacing:-.04em;margin:21px 0 20px}.frames-copy h3 em{color:#c4ded5}.frames-copy p{font-size:13px;line-height:1.7;max-width:335px}
     .frames-top{position:absolute;z-index:5;left:var(--gutter);right:var(--gutter);top:30px;display:flex;align-items:center;justify-content:space-between;color:white}.frames-dots{position:absolute;z-index:5;right:var(--gutter);top:100px;display:flex;gap:7px}.frames-dots i{display:block;width:25px;height:2px;background:#ffffff75;transition:width .3s,background .3s}.frames-dots i.active{width:42px;background:#fff}.frames-side{position:absolute;z-index:5;right:var(--gutter);bottom:45px;color:#fff;font-size:9px;letter-spacing:.18em;writing-mode:vertical-rl;transform:rotate(180deg)}
@@ -396,40 +396,40 @@
     .service-row.is-active .service-plus{transform:rotate(45deg)}
     .serviced-preview figcaption{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.serviced-preview figcaption a{font-size:8px;letter-spacing:.04em;text-decoration:underline;text-underline-offset:3px}
     .serviced-section>.concept-note a{text-decoration:underline;text-underline-offset:3px;color:var(--ink)}
-    .suites-section{background:#f0eee8}.suites-heading{display:flex;align-items:end;justify-content:space-between;gap:40px;padding-bottom:55px}.suites-heading .eyebrow{margin-bottom:24px}.suites-heading .body-copy{max-width:260px}.suites-scroll{height:400svh;position:relative}.suites-sticky{position:-webkit-sticky;position:sticky;top:var(--nav);height:calc(var(--scene-vh) - var(--nav));overflow:hidden}.suites-track{display:flex;width:400vw;height:100%;will-change:transform}.suite-panel{width:100vw;height:100%;flex:none;display:grid;grid-template-columns:53% 47%;background:#edeae1}.suite-panel:nth-child(even){background:#e4e7dd}.suite-photo{overflow:hidden}.suite-photo img{height:100%;width:100%;object-fit:cover;transition:transform .8s var(--ease)}.suite-panel.is-current .suite-photo img{transform:scale(1.025)}.suite-copy{position:relative;padding:8vw 7vw;display:flex;flex-direction:column;justify-content:center;align-items:start}.suite-copy .eyebrow{color:#677969}.suite-copy h3{font:400 clamp(58px,6.2vw,96px)/.95 var(--serif);letter-spacing:-.04em;margin:27px 0}.suite-copy h3 em{color:#788b77}.suite-copy>p:not(.eyebrow){font-size:13px;line-height:1.9;color:var(--muted);max-width:340px}.suite-copy .text-link{margin-top:30px}.suite-count{position:absolute;right:var(--gutter);bottom:35px;font-size:10px;letter-spacing:.15em}.suites-progress{position:absolute;left:var(--gutter);bottom:28px;display:flex;gap:7px;z-index:5}.suites-progress button{border:0;border-top:1px solid #66796790;background:none;min-width:56px;padding:10px 0;text-align:left;font-size:9px;color:var(--muted)}.suites-progress button[aria-pressed="true"]{border-color:var(--ink);color:var(--ink)}.suites-note{font-size:9px;color:var(--muted);padding:14px var(--gutter)}
+    .suites-section{background:#f0eee8}.suites-heading{display:flex;align-items:end;justify-content:space-between;gap:40px;padding-bottom:55px}.suites-heading .eyebrow{margin-bottom:24px}.suites-heading .body-copy{max-width:260px}.suites-scroll{height:400vh;height:400svh;position:relative}.suites-sticky{position:-webkit-sticky;position:sticky;top:var(--nav);height:calc(100vh - var(--nav));height:calc(var(--scene-vh) - var(--nav));overflow:hidden}.suites-track{display:flex;width:400vw;height:100%;min-height:100%;will-change:transform;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);-webkit-backface-visibility:hidden;backface-visibility:hidden}.suite-panel{width:100vw;height:100%;flex:none;display:grid;grid-template-columns:53% 47%;background:#edeae1}.suite-panel:nth-child(even){background:#e4e7dd}.suite-photo{position:relative;overflow:hidden;min-width:0;min-height:1px}.suite-photo img{position:absolute;inset:0;height:100%;width:100%;object-fit:cover;transition:transform .8s var(--ease);-webkit-backface-visibility:hidden;backface-visibility:hidden}.suite-panel.is-current .suite-photo img{transform:scale(1.025)}.suite-copy{position:relative;padding:8vw 7vw;display:flex;flex-direction:column;justify-content:center;align-items:start}.suite-copy .eyebrow{color:#677969}.suite-copy h3{font:400 clamp(58px,6.2vw,96px)/.95 var(--serif);letter-spacing:-.04em;margin:27px 0}.suite-copy h3 em{color:#788b77}.suite-copy>p:not(.eyebrow){font-size:13px;line-height:1.9;color:var(--muted);max-width:340px}.suite-copy .text-link{margin-top:30px}.suite-count{position:absolute;right:var(--gutter);bottom:35px;font-size:10px;letter-spacing:.15em}.suites-progress{position:absolute;left:var(--gutter);bottom:28px;display:flex;gap:7px;z-index:5}.suites-progress button{border:0;border-top:1px solid #66796790;background:none;min-width:56px;padding:10px 0;text-align:left;font-size:9px;color:var(--muted)}.suites-progress button[aria-pressed="true"]{border-color:var(--ink);color:var(--ink)}.suites-note{font-size:9px;color:var(--muted);padding:14px var(--gutter)}
     @media(min-width:768px){.context-section{padding-top:85px;padding-bottom:70px}.serviced-section{padding-top:85px;padding-bottom:95px}.suites-heading{padding-top:90px;padding-bottom:48px}}
     .faq-intro{margin-top:25px;max-width:280px}
     @media(max-width:1200px){.desktop-nav{display:none}.menu-toggle{display:flex}.header-cta{margin-left:auto}.mobile-menu{display:flex}}
     @media(max-width:767px){
-      .frames-intro,.suites-heading{display:block;padding-bottom:35px}.frames-intro .body-copy,.suites-heading .body-copy{margin-top:23px}.frames-scroll{height:270svh}.frames-sticky{min-height:0}.frames-panel:after{background:linear-gradient(0deg,rgba(12,33,30,.77),rgba(12,33,30,.06) 78%)}.frames-copy{left:var(--gutter);right:var(--gutter);bottom:13%}.frames-copy h3{font-size:clamp(57px,11vw,77px)}.frames-copy p{font-size:11px;max-width:280px}.frames-top{top:22px}.frames-top .eyebrow{font-size:8px}.frames-dots{top:89px}.frames-side{bottom:22px;font-size:7px}
-      .architecture{height:275svh;margin-top:35px}.architecture-sticky{height:calc(var(--scene-vh) - var(--nav));min-height:0;grid-template-columns:1fr;grid-template-rows:auto 1fr;gap:20px;padding-top:28px;padding-bottom:20px;align-items:stretch}.architecture-copy{align-self:start}.architecture-copy h2{font-size:45px;margin:14px 0 12px}.architecture-copy h2 br{display:none}.architecture-copy>p{font-size:11px;max-width:310px}.architecture-chapter{display:none}.house-stage{min-height:280px;margin-left:-16px;margin-right:-16px}.house-panel{min-height:0}.house-instruction{font-size:8px;margin-bottom:10px}.house-instruction>span:last-child{font-size:7px}.scene-tabs{gap:12px}.scene-tabs button{font-size:9px;padding:12px 0;min-height:42px}.scene-tabs button span{font-size:7px;margin-right:5px}.house-range{height:24px}.model-status{font-size:7px}.room-label{font-size:8px}
-      .map-section{height:360svh;margin-top:40px}.map-sticky{height:calc(var(--scene-vh) - var(--nav));min-height:0}.map-content{padding-top:32px;padding-bottom:127px}.map-content h2{font-size:47px;max-width:330px;margin-top:19px}.map-content h2 br{display:none}.map-chapter{margin-top:auto;max-width:235px}.map-chapter h3{font-size:28px;margin-bottom:7px}.map-chapter p{font-size:10px;line-height:1.7;max-width:260px}.map-wash{background:linear-gradient(180deg,#e9ede4,rgba(233,237,228,.91) 16%,transparent 36%,transparent 57%,rgba(233,237,228,.92) 75%,#e9ede4 93%)}.map-compass{top:220px;right:var(--gutter)}.map-coordinates{bottom:160px;right:var(--gutter);font-size:6px;max-width:120px}.map-coordinates>span{display:none}.map-footer{bottom:20px}.map-steps{gap:9px}.map-steps button{font-size:8px;padding-top:12px;padding-bottom:12px;min-height:49px;display:flex;flex-direction:column;gap:4px}.map-steps button span{font-size:7px;margin:0}.map-disclaimer{font-size:6px;align-items:start;gap:20px}
+      .frames-intro,.suites-heading{display:block;padding-bottom:35px}.frames-intro .body-copy,.suites-heading .body-copy{margin-top:23px}.frames-scroll{height:270vh;height:270svh}.frames-sticky{min-height:0}.frames-panel:after{background:linear-gradient(0deg,rgba(12,33,30,.77),rgba(12,33,30,.06) 78%)}.frames-copy{left:var(--gutter);right:var(--gutter);bottom:13%}.frames-copy h3{font-size:clamp(57px,11vw,77px)}.frames-copy p{font-size:11px;max-width:280px}.frames-top{top:22px}.frames-top .eyebrow{font-size:8px}.frames-dots{top:89px}.frames-side{bottom:22px;font-size:7px}
+      .architecture{height:275vh;height:275svh;margin-top:35px}.architecture-sticky{height:calc(var(--scene-vh) - var(--nav));min-height:0;grid-template-columns:1fr;grid-template-rows:auto 1fr;gap:20px;padding-top:28px;padding-bottom:20px;align-items:stretch}.architecture-copy{align-self:start}.architecture-copy h2{font-size:45px;margin:14px 0 12px}.architecture-copy h2 br{display:none}.architecture-copy>p{font-size:11px;max-width:310px}.architecture-chapter{display:none}.house-stage{min-height:280px;margin-left:-16px;margin-right:-16px}.house-panel{min-height:0}.house-instruction{font-size:8px;margin-bottom:10px}.house-instruction>span:last-child{font-size:7px}.scene-tabs{gap:12px}.scene-tabs button{font-size:9px;padding:12px 0;min-height:42px}.scene-tabs button span{font-size:7px;margin-right:5px}.house-range{height:24px}.model-status{font-size:7px}.room-label{font-size:8px}
+      .map-section{height:360vh;height:360svh;margin-top:40px}.map-sticky{height:calc(var(--scene-vh) - var(--nav));min-height:0}.map-content{padding-top:32px;padding-bottom:127px}.map-content h2{font-size:47px;max-width:330px;margin-top:19px}.map-content h2 br{display:none}.map-chapter{margin-top:auto;max-width:235px}.map-chapter h3{font-size:28px;margin-bottom:7px}.map-chapter p{font-size:10px;line-height:1.7;max-width:260px}.map-wash{background:linear-gradient(180deg,#e9ede4,rgba(233,237,228,.91) 16%,transparent 36%,transparent 57%,rgba(233,237,228,.92) 75%,#e9ede4 93%)}.map-compass{top:220px;right:var(--gutter)}.map-coordinates{bottom:160px;right:var(--gutter);font-size:6px;max-width:120px}.map-coordinates>span{display:none}.map-footer{bottom:20px}.map-steps{gap:9px}.map-steps button{font-size:8px;padding-top:12px;padding-bottom:12px;min-height:49px;display:flex;flex-direction:column;gap:4px}.map-steps button span{font-size:7px;margin:0}.map-disclaimer{font-size:6px;align-items:start;gap:20px}
       .context-section{display:block}.context-heading .body-copy{margin-bottom:35px}.context-fact{grid-template-columns:100px 1fr 16px;gap:10px}.context-fact strong{font-size:39px}.context-fact h3{font-size:24px}.context-section>.concept-note{margin-top:23px}
       .serviced-heading{display:block;margin-bottom:35px}.serviced-heading .eyebrow{margin-bottom:24px}.serviced-heading .body-copy{margin-top:21px}.serviced-grid{grid-template-columns:1fr;gap:30px}.serviced-preview{position:relative;top:0;max-width:420px}.serviced-preview>div{aspect-ratio:4/3}.service-main strong{font-size:31px}
-      .suites-scroll{height:400svh}.suite-panel{display:flex;flex-direction:column}.suite-photo{height:47%;flex:none}.suite-copy{flex:1;padding:30px var(--gutter) 68px}.suite-copy h3{font-size:clamp(52px,10vw,70px);margin:16px 0}.suite-copy>p:not(.eyebrow){font-size:11px;line-height:1.75}.suite-copy .text-link{margin-top:18px}.suite-count{bottom:22px;font-size:8px}.suites-progress{bottom:15px}.suites-progress button{min-width:38px}
+      .suites-scroll{height:400vh;height:400svh}.suite-panel{display:flex;flex-direction:column}.suite-photo{height:47%;min-height:220px;flex:none}.suite-copy{flex:1;padding:30px var(--gutter) 68px}.suite-copy h3{font-size:clamp(52px,10vw,70px);margin:16px 0}.suite-copy>p:not(.eyebrow){font-size:11px;line-height:1.75}.suite-copy .text-link{margin-top:18px}.suite-count{bottom:22px;font-size:8px}.suites-progress{bottom:15px}.suites-progress button{min-width:38px}
       .header-cta{display:none}
     }
     @media(max-width:900px) and (orientation:landscape) and (max-height:560px){
       :root{--nav:58px}
-      .frames-scroll{height:270svh}.architecture{height:325svh;margin-top:24px}.map-section{height:350svh;margin-top:28px}.suites-scroll{height:390svh}
+      .frames-scroll{height:270vh;height:270svh}.architecture{height:325vh;height:325svh;margin-top:24px}.map-section{height:350vh;height:350svh;margin-top:28px}.suites-scroll{height:390vh;height:390svh}
       .frames-sticky,.architecture-sticky,.map-sticky,.suites-sticky{position:-webkit-sticky;position:sticky;top:var(--nav);height:calc(var(--scene-vh) - var(--nav));min-height:0}
       .frames-copy{bottom:10%}.frames-copy h3{font-size:clamp(42px,8vw,61px);margin:12px 0 10px}.frames-copy p{font-size:9px;max-width:270px}.frames-top{top:14px}.frames-dots{top:52px}.frames-side{bottom:14px}
       .architecture-sticky{grid-template-columns:.78fr 1.65fr;grid-template-rows:1fr;gap:3%;padding:12px var(--gutter) 10px}.architecture-copy{align-self:center}.architecture-copy h2{font-size:31px;margin:8px 0}.architecture-copy>p{font-size:9px;line-height:1.55}.architecture-chapter{display:none}.house-panel-top{padding-top:0}.house-stage{min-height:0;margin:0}.house-instruction{margin-bottom:5px;font-size:7px}.scene-tabs button{min-height:34px;padding:7px 0;font-size:8px}.house-range{height:18px}.model-status{display:none}
       .map-content{padding-top:16px;padding-bottom:78px}.map-content h2{font-size:34px;max-width:260px;margin-top:7px}.map-chapter{max-width:225px}.map-chapter h3{font-size:24px;margin-bottom:4px}.map-chapter p{font-size:8px;line-height:1.5}.map-compass{top:16px}.map-coordinates{bottom:100px}.map-footer{bottom:8px}.map-steps button{min-height:36px;padding:6px 0;font-size:7px}.map-disclaimer{display:none}
-      .suite-panel{display:grid;grid-template-columns:48% 52%}.suite-photo{height:100%}.suite-copy{padding:18px 5vw 22px}.suite-copy h3{font-size:clamp(38px,6.5vw,54px);margin:10px 0}.suite-copy>p:not(.eyebrow){font-size:9px;line-height:1.55}.suite-copy .text-link{margin-top:10px}.suite-spec{margin-top:8px}.suite-price{margin-top:7px}
+      .suite-panel{display:grid;grid-template-columns:48% 52%}.suite-photo{height:100%;min-height:0}.suite-copy{padding:18px 5vw 22px}.suite-copy h3{font-size:clamp(38px,6.5vw,54px);margin:10px 0}.suite-copy>p:not(.eyebrow){font-size:9px;line-height:1.55}.suite-copy .text-link{margin-top:10px}.suite-spec{margin-top:8px}.suite-price{margin-top:7px}
     }
     @media(max-width:767px){.suites-progress,.suite-count{display:none}.suite-copy{padding-bottom:34px}}
     @media(max-width:767px) and (max-height:740px) and (orientation:portrait){
       .frames-sticky,.architecture-sticky,.map-sticky,.suites-sticky{min-height:0}
       .architecture-sticky{padding-top:18px;padding-bottom:12px;gap:10px}.architecture-copy h2{font-size:clamp(34px,8vw,42px);margin:8px 0}.architecture-copy>p{font-size:9px;line-height:1.55}.house-stage{min-height:0}.house-instruction{margin-bottom:6px}.scene-tabs button{min-height:36px;padding:8px 0}.model-status{display:none}
       .map-content{padding-top:22px;padding-bottom:112px}.map-content h2{font-size:41px;margin-top:10px}.map-compass{top:178px}.map-coordinates{bottom:145px}.map-footer{bottom:12px}.map-steps button{min-height:42px;padding:8px 0}.map-disclaimer{display:none}
-      .suite-photo{height:43%}.suite-copy{padding-top:20px;padding-bottom:22px}.suite-copy h3{font-size:clamp(44px,9vw,58px);margin:11px 0}.suite-copy>p:not(.eyebrow){line-height:1.6}.suite-spec{margin-top:9px}.suite-price{margin-top:8px}
+      .suite-photo{height:43%;min-height:190px}.suite-copy{padding-top:20px;padding-bottom:22px}.suite-copy h3{font-size:clamp(44px,9vw,58px);margin:11px 0}.suite-copy>p:not(.eyebrow){line-height:1.6}.suite-spec{margin-top:9px}.suite-price{margin-top:8px}
     }
-    @media(prefers-reduced-motion:reduce){.architecture,.map-section,.frames-scroll,.suites-scroll{height:auto}.architecture-sticky,.map-sticky,.frames-sticky,.suites-sticky{position:relative;top:0}.architecture-sticky{height:700px}.map-sticky{height:750px}.frames-sticky{height:670px}.suites-sticky{height:auto}.suites-track{width:100%;display:grid;grid-template-columns:1fr;transform:none!important}.suite-panel{width:100%;min-height:600px}.frames-panel{opacity:0!important}.frames-panel:first-child{opacity:1!important}}
+    @media(prefers-reduced-motion:reduce){.frames-panel img,.suite-photo img{transition:none!important}.suites-track{transition:none!important}}
 
 .suite-spec{display:flex;flex-wrap:wrap;gap:7px 17px;margin-top:21px;color:#566b5b;font-size:9px;letter-spacing:.08em;text-transform:uppercase}.suite-price{font:400 27px/1 var(--serif);margin-top:17px}.suite-price small{font:500 9px var(--sans);letter-spacing:.08em;color:var(--muted)}@media(max-width:767px){.suite-spec{font-size:8px;margin-top:13px}.suite-price{font-size:23px;margin-top:11px}.suite-copy .text-link{margin-top:15px}}
     /* Architectural clarity: the final beat of the existing 3D cutaway. */
-    .architecture{height:350svh}
+    .architecture{height:350vh;height:350svh}
     .clarity-layer{position:absolute;inset:1.5% 1%;z-index:5;display:flex;flex-direction:column;justify-content:space-between;align-items:center;padding:19px 21px;border-radius:18px;border:1px solid #416357;background:#253d34;color:#f5f3ed;opacity:0;visibility:hidden;pointer-events:none;box-shadow:0 28px 65px rgba(31,58,43,.18);overflow:hidden}
     .clarity-layer.is-visible{visibility:visible;pointer-events:auto}
     .clarity-layer:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,rgba(179,209,188,.09),transparent 55%);pointer-events:none}
@@ -447,8 +447,8 @@
     .house-stage.clarity-active{cursor:default}
     .house-stage.clarity-active .room-labels{opacity:0}
     #rotate-house:disabled{opacity:.35;cursor:default}
-    @media(max-width:767px){.architecture{height:325svh}.clarity-layer{inset:0 1%;padding:12px 13px;border-radius:12px}.clarity-top,.clarity-bottom{font-size:6px;letter-spacing:.08em;gap:10px}.clarity-plan{height:78%}.clarity-zone text{font-size:10px}}
-    @media(max-width:900px) and (orientation:landscape) and (max-height:560px){.architecture{height:325svh}}
+    @media(max-width:767px){.architecture{height:325vh;height:325svh}.clarity-layer{inset:0 1%;padding:12px 13px;border-radius:12px}.clarity-top,.clarity-bottom{font-size:6px;letter-spacing:.08em;gap:10px}.clarity-plan{height:78%}.clarity-zone text{font-size:10px}}
+    @media(max-width:900px) and (orientation:landscape) and (max-height:560px){.architecture{height:325vh;height:325svh}}
     @media(prefers-reduced-motion:reduce){.architecture{height:auto}.clarity-zone-fill{transition:none}}
   </style>
 </head>
@@ -495,9 +495,9 @@
     <section class="frames-section" id="casa-palma" aria-labelledby="frames-title">
       <div class="frames-intro section-pad"><div class="reveal"><p class="eyebrow">01 / Visual storytelling</p><h2 class="section-title" id="frames-title">See it. <em>Feel it.</em></h2></div><p class="body-copy reveal">Meet Casa Palma, an illustrative Roatán villa concept: a quiet arrival, a room to settle into, and a view that stays with you.</p></div>
       <div class="frames-scroll"><div class="frames-sticky">
-        <article class="frames-panel"><img src="https://images.pexels.com/photos/12715501/pexels-photo-12715501.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000&amp;q=83" alt="Open coastal living room with sweeping sea views" loading="lazy"><div class="frames-copy"><span>01 / THE FIRST LOOK</span><h3>Let the view<br><em>do the talking.</em></h3><p>Step inside. The sea is already part of the room.</p></div></article>
-        <article class="frames-panel"><img src="https://images.pexels.com/photos/12715452/pexels-photo-12715452.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000&amp;q=83" alt="Warm, thoughtfully furnished vacation bedroom" loading="lazy"><div class="frames-copy"><span>02 / THE QUIET DETAILS</span><h3>A reason<br><em>to linger.</em></h3><p>Soft light, natural textures, and space to slow down.</p></div></article>
-        <article class="frames-panel"><img src="https://images.pexels.com/photos/12715498/pexels-photo-12715498.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000&amp;q=83" alt="Coastal villa and pool overlooking the sea" loading="lazy"><div class="frames-copy"><span>03 / THE WHOLE PICTURE</span><h3>And suddenly,<br><em>you're there.</em></h3><p>One more look outside. The day can go anywhere.</p></div></article>
+        <article class="frames-panel"><img src="https://images.pexels.com/photos/12715501/pexels-photo-12715501.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000&amp;q=83" alt="Open coastal living room with sweeping sea views" loading="eager"><div class="frames-copy"><span>01 / THE FIRST LOOK</span><h3>Let the view<br><em>do the talking.</em></h3><p>Step inside. The sea is already part of the room.</p></div></article>
+        <article class="frames-panel"><img src="https://images.pexels.com/photos/12715452/pexels-photo-12715452.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000&amp;q=83" alt="Warm, thoughtfully furnished vacation bedroom" loading="eager"><div class="frames-copy"><span>02 / THE QUIET DETAILS</span><h3>A reason<br><em>to linger.</em></h3><p>Soft light, natural textures, and space to slow down.</p></div></article>
+        <article class="frames-panel"><img src="https://images.pexels.com/photos/12715498/pexels-photo-12715498.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000&amp;q=83" alt="Coastal villa and pool overlooking the sea" loading="eager"><div class="frames-copy"><span>03 / THE WHOLE PICTURE</span><h3>And suddenly,<br><em>you're there.</em></h3><p>One more look outside. The day can go anywhere.</p></div></article>
         <div class="frames-copy frames-live-copy" id="frames-live-copy" aria-live="off"></div>
         <div class="frames-top"><span class="eyebrow">Casa Palma / A story in frames</span><button class="gallery-open" type="button" aria-label="Open full-screen photo gallery"><svg class="arrow" aria-hidden="true"><use href="#i-plus"/></svg></button></div>
         <div class="frames-dots" aria-hidden="true"><i class="active"></i><i></i><i></i></div>
@@ -613,10 +613,10 @@
     <section class="suites-section" id="suites" aria-labelledby="suites-title">
       <div class="suites-heading section-pad"><div class="reveal"><p class="eyebrow">06 / The suites</p><h2 class="section-title" id="suites-title">Four rooms.<br><em>Four ways to stay.</em></h2></div><p class="body-copy reveal">A suite should have more than a thumbnail. Follow each room into its own page.</p></div>
       <div class="suites-scroll"><div class="suites-sticky"><div class="suites-track">
-        <article class="suite-panel"><div class="suite-photo"><img src="https://images.pexels.com/photos/28054888/pexels-photo-28054888.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000" alt="Light-filled bedroom with an ocean-facing view" loading="lazy"></div><div class="suite-copy"><p class="eyebrow">Suite 01 / The ocean suite</p><h3>Wake to<br><em>the horizon.</em></h3><p>Soft linen, warm timber, and a view that makes the first hour of the day feel entirely your own.</p><div class="suite-spec"><span>King bed</span><span>2 guests</span><span>48 m²</span></div><div class="suite-price">From $495 <small>USD / night*</small></div><a class="text-link" href="suite-01.html">Explore suite 01 <svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="suite-count">01 / 04</span></div></article>
-        <article class="suite-panel"><div class="suite-photo"><img src="https://images.pexels.com/photos/12715452/pexels-photo-12715452.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000" alt="Warm and quiet bedroom with natural finishes" loading="lazy"></div><div class="suite-copy"><p class="eyebrow">Suite 02 / The garden suite</p><h3>A little more<br><em>quiet.</em></h3><p>Natural textures and a slower rhythm, with space to slip away for the afternoon.</p><div class="suite-spec"><span>Queen bed</span><span>2 guests</span><span>40 m²</span></div><div class="suite-price">From $395 <small>USD / night*</small></div><a class="text-link" href="suite-02.html">Explore suite 02 <svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="suite-count">02 / 04</span></div></article>
-        <article class="suite-panel"><div class="suite-photo"><img src="https://images.pexels.com/photos/27626174/pexels-photo-27626174.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000" alt="Spacious primary bedroom with pale finishes" loading="lazy"></div><div class="suite-copy"><p class="eyebrow">Suite 03 / The terrace suite</p><h3>Inside, then<br><em>outside.</em></h3><p>A room designed around the easy movement from morning light to open air.</p><div class="suite-spec"><span>King bed</span><span>2 guests</span><span>52 m²</span></div><div class="suite-price">From $545 <small>USD / night*</small></div><a class="text-link" href="suite-03.html">Explore suite 03 <svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="suite-count">03 / 04</span></div></article>
-        <article class="suite-panel"><div class="suite-photo"><img src="https://images.pexels.com/photos/8146153/pexels-photo-8146153.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000" alt="Calm marble bath in a refined coastal interior" loading="lazy"></div><div class="suite-copy"><p class="eyebrow">Suite 04 / The retreat suite</p><h3>Make room<br><em>to unwind.</em></h3><p>Quiet corners, a generous bath, and an end to the day that asks for nothing more.</p><div class="suite-spec"><span>King bed</span><span>2 guests</span><span>46 m²</span></div><div class="suite-price">From $465 <small>USD / night*</small></div><a class="text-link" href="suite-04.html">Explore suite 04 <svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="suite-count">04 / 04</span></div></article>
+        <article class="suite-panel"><div class="suite-photo"><img src="https://images.pexels.com/photos/28054888/pexels-photo-28054888.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000" alt="Light-filled bedroom with an ocean-facing view" loading="eager"></div><div class="suite-copy"><p class="eyebrow">Suite 01 / The ocean suite</p><h3>Wake to<br><em>the horizon.</em></h3><p>Soft linen, warm timber, and a view that makes the first hour of the day feel entirely your own.</p><div class="suite-spec"><span>King bed</span><span>2 guests</span><span>48 m²</span></div><div class="suite-price">From $495 <small>USD / night*</small></div><a class="text-link" href="suite-01.html">Explore suite 01 <svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="suite-count">01 / 04</span></div></article>
+        <article class="suite-panel"><div class="suite-photo"><img src="https://images.pexels.com/photos/12715452/pexels-photo-12715452.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000" alt="Warm and quiet bedroom with natural finishes" loading="eager"></div><div class="suite-copy"><p class="eyebrow">Suite 02 / The garden suite</p><h3>A little more<br><em>quiet.</em></h3><p>Natural textures and a slower rhythm, with space to slip away for the afternoon.</p><div class="suite-spec"><span>Queen bed</span><span>2 guests</span><span>40 m²</span></div><div class="suite-price">From $395 <small>USD / night*</small></div><a class="text-link" href="suite-02.html">Explore suite 02 <svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="suite-count">02 / 04</span></div></article>
+        <article class="suite-panel"><div class="suite-photo"><img src="https://images.pexels.com/photos/27626174/pexels-photo-27626174.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000" alt="Spacious primary bedroom with pale finishes" loading="eager"></div><div class="suite-copy"><p class="eyebrow">Suite 03 / The terrace suite</p><h3>Inside, then<br><em>outside.</em></h3><p>A room designed around the easy movement from morning light to open air.</p><div class="suite-spec"><span>King bed</span><span>2 guests</span><span>52 m²</span></div><div class="suite-price">From $545 <small>USD / night*</small></div><a class="text-link" href="suite-03.html">Explore suite 03 <svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="suite-count">03 / 04</span></div></article>
+        <article class="suite-panel"><div class="suite-photo"><img src="https://images.pexels.com/photos/8146153/pexels-photo-8146153.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000" alt="Calm marble bath in a refined coastal interior" loading="eager"></div><div class="suite-copy"><p class="eyebrow">Suite 04 / The retreat suite</p><h3>Make room<br><em>to unwind.</em></h3><p>Quiet corners, a generous bath, and an end to the day that asks for nothing more.</p><div class="suite-spec"><span>King bed</span><span>2 guests</span><span>46 m²</span></div><div class="suite-price">From $465 <small>USD / night*</small></div><a class="text-link" href="suite-04.html">Explore suite 04 <svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="suite-count">04 / 04</span></div></article>
       </div><div class="suites-progress" aria-label="Choose a suite"><button type="button" data-suite="0" aria-label="Go to suite 01" aria-pressed="true">01</button><button type="button" data-suite="1" aria-label="Go to suite 02" aria-pressed="false">02</button><button type="button" data-suite="2" aria-label="Go to suite 03" aria-pressed="false">03</button><button type="button" data-suite="3" aria-label="Go to suite 04" aria-pressed="false">04</button></div></div></div>
       <p class="suites-note">Casa Palma is a concept property. *Nightly rates, suite sizes, amenities, and photography are illustrative.</p>
     </section>
@@ -945,6 +945,49 @@
     const suiteSticky = $('.suites-sticky');
     const suiteTrack = $('.suites-track');
     const suitePanels = $$('.suite-panel');
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    const coarsePointer = window.matchMedia ? window.matchMedia('(pointer:coarse)') : { matches: false };
+    let sceneViewportHeight = 0;
+    let sceneViewportWidth = 0;
+    document.documentElement.classList.toggle('ios', isIOS);
+
+    function isMobileSceneLayout() { return coarsePointer.matches || window.innerWidth <= 900; }
+    function readUsableViewportHeight() {
+      const vv = window.visualViewport;
+      const value = vv && vv.height ? vv.height : window.innerHeight;
+      return Math.max(320, Math.round(value || document.documentElement.clientHeight || 700));
+    }
+    function lockMobileSceneGeometry(force) {
+      if (!isMobileSceneLayout()) {
+        sceneViewportHeight = 0;
+        sceneViewportWidth = window.innerWidth;
+        document.documentElement.style.removeProperty('--scene-vh');
+        [framesScroll, houseSection, mapJourney, suiteScroll].forEach(section => section.style.height = '');
+        return;
+      }
+      const width = Math.round(window.innerWidth || document.documentElement.clientWidth || 0);
+      if (!force && sceneViewportHeight && Math.abs(width - sceneViewportWidth) < 2) return;
+      sceneViewportWidth = width;
+      sceneViewportHeight = readUsableViewportHeight();
+      document.documentElement.style.setProperty('--scene-vh', sceneViewportHeight + 'px');
+      const landscape = width > sceneViewportHeight && sceneViewportHeight <= 560;
+      framesScroll.style.height = Math.round(sceneViewportHeight * 2.70) + 'px';
+      houseSection.style.height = Math.round(sceneViewportHeight * 3.25) + 'px';
+      mapJourney.style.height = Math.round(sceneViewportHeight * (landscape ? 3.50 : 3.60)) + 'px';
+      suiteScroll.style.height = Math.round(sceneViewportHeight * (landscape ? 3.90 : 4.00)) + 'px';
+    }
+    function primeScrollSceneImages() {
+      $$('.frames-panel img, .suite-photo img').forEach((img, index) => {
+        img.loading = 'eager';
+        img.decoding = 'async';
+        if ('fetchPriority' in img) img.fetchPriority = index < 2 ? 'high' : 'auto';
+        // Touching src forces WebKit to enqueue transformed/off-screen images immediately.
+        const source = img.currentSrc || img.getAttribute('src');
+        if (source && !img.complete) { const preload = new Image(); preload.decoding = 'async'; preload.src = source; }
+      });
+    }
+    lockMobileSceneGeometry(true);
+    primeScrollSceneImages();
     let houseProgress = 0, mapProgress = 0, mapManual = null, houseManual = null;
     let currentHouse = -1, currentMap = -1, scene3D = null;
     const clarityLayer = $('#clarity-layer');
@@ -971,12 +1014,10 @@
     });
     const notify = toast;
     function sceneProgress(section, sticky) {
-      const scrollTop = document.scrollingElement?.scrollTop ?? window.scrollY ?? 0;
-      const sectionTop = scrollTop + section.getBoundingClientRect().top;
       const travel = Math.max(1, section.offsetHeight - sticky.offsetHeight);
-      return clamp((scrollTop - (sectionTop - navHeight)) / travel);
+      return clamp((navHeight - section.getBoundingClientRect().top) / travel);
     }
-    function canScrollScene(section) { return !reducedMotion && section.offsetHeight > (section.firstElementChild?.offsetHeight || 0) + 30; }
+    function canScrollScene(section) { const child = section.firstElementChild; return section.offsetHeight > ((child && child.offsetHeight) || 0) + 30; }
     function jumpToProgress(section, progress) {
       const sticky = section.firstElementChild;
       const travel = Math.max(1, section.offsetHeight - sticky.offsetHeight);
@@ -984,7 +1025,7 @@
       window.scrollTo({ top, behavior: reducedMotion ? 'auto' : 'smooth' });
     }
     function updateFrames() {
-      const p = reducedMotion ? 0 : sceneProgress(framesScroll, framesSticky);
+      const p = sceneProgress(framesScroll, framesSticky);
       const firstWipe = smooth(clamp((p - .14) / .28));
       const secondWipe = smooth(clamp((p - .58) / .30));
       const firstInset = `inset(0 ${(100 * (1 - firstWipe)).toFixed(2)}% 0 0)`;
@@ -998,9 +1039,9 @@
       });
       const nextPhase = p < .42 ? 0 : p < .88 ? 1 : 2;
       if (nextPhase !== storyPhase) {
-        framesLiveCopy.getAnimations().forEach(animation => animation.cancel());
+        if (framesLiveCopy.getAnimations) framesLiveCopy.getAnimations().forEach(animation => animation.cancel());
         framesLiveCopy.innerHTML = frameCopy[nextPhase];
-        if (storyPhase >= 0 && !reducedMotion) framesLiveCopy.animate([
+        if (storyPhase >= 0 && !reducedMotion && framesLiveCopy.animate) framesLiveCopy.animate([
           { opacity: 0, transform: 'translateY(15px)' },
           { opacity: 1, transform: 'translateY(0)' }
         ], { duration: 390, easing: 'cubic-bezier(.2,.7,.2,1)' });
@@ -1237,8 +1278,8 @@
 
 
     function updateSuites() {
-      const p = reducedMotion ? 0 : sceneProgress(suiteScroll, suiteSticky);
-      const maxShift = Math.max(0, suiteTrack.scrollWidth - suiteSticky.clientWidth);
+      const p = sceneProgress(suiteScroll, suiteSticky);
+      const maxShift = Math.max(0, suiteSticky.clientWidth * (suitePanels.length - 1));
       const transitions = [[.12, .27], [.39, .54], [.66, .81]];
       let position = 0;
       for (let i = 0; i < transitions.length; i++) {
@@ -1247,7 +1288,9 @@
         else if (p > start) { position = (i + smooth((p - start) / (end - start))) / 3; break; }
         else break;
       }
-      suiteTrack.style.transform = `translate3d(${-maxShift * position}px,0,0)`;
+      const suiteX = -maxShift * position;
+      suiteTrack.style.webkitTransform = `translate3d(${suiteX}px,0,0)`;
+      suiteTrack.style.transform = `translate3d(${suiteX}px,0,0)`;
       const index = Math.round(position * 3);
       suitePanels.forEach((panel, i) => panel.classList.toggle('is-current', i === index));
       $$('[data-suite]').forEach((button, i) => button.setAttribute('aria-pressed', String(i === index)));
@@ -1262,7 +1305,7 @@
     function selectService(row) {
       if (row.classList.contains('is-active')) return;
       serviceRows.forEach(item => { item.classList.toggle('is-active', item === row); item.setAttribute('aria-expanded', String(item === row)); });
-      const nextImage = row.dataset.serviceImage.replaceAll('&amp;', '&');
+      const nextImage = row.dataset.serviceImage.split('&amp;').join('&');
       const swap = ++serviceSwap;
       const replacement = new Image();
       serviceImage.style.opacity = reducedMotion ? '1' : '.45';
@@ -1281,14 +1324,14 @@
     }
     serviceRows.forEach(row => { row.addEventListener('click', () => selectService(row)); row.addEventListener('mouseenter', () => { if (matchMedia('(hover:hover)').matches) selectService(row); }); });
     function updateScenes() {
-      if (!reducedMotion) updateFrames();
-      houseProgress = houseManual ?? (canScrollScene(houseSection) ? sceneProgress(houseSection, $('.architecture-sticky')) : houseProgress);
-      mapProgress = mapManual ?? (canScrollScene(mapJourney) ? sceneProgress(mapJourney, $('.map-sticky')) : mapProgress);
+      updateFrames();
+      houseProgress = houseManual !== null ? houseManual : (canScrollScene(houseSection) ? sceneProgress(houseSection, $('.architecture-sticky')) : houseProgress);
+      mapProgress = mapManual !== null ? mapManual : (canScrollScene(mapJourney) ? sceneProgress(mapJourney, $('.map-sticky')) : mapProgress);
       const houseRect = houseSection.getBoundingClientRect();
       if (houseRect.bottom > 0 && houseRect.top < innerHeight) updateHouse(houseProgress);
       const mapRect = mapJourney.getBoundingClientRect();
       if (mapRect.bottom > 0 && mapRect.top < innerHeight) updateMap(mapProgress);
-      if (!reducedMotion) updateSuites();
+      updateSuites();
     }
     let scrollRequest = 0, resizeRequest = 0;
     let lastViewportWidth = innerWidth, lastViewportHeight = innerHeight;
@@ -1306,9 +1349,10 @@
       const heightChanged = Math.abs(innerHeight - lastViewportHeight) > 1;
       lastViewportWidth = innerWidth; lastViewportHeight = innerHeight;
       navHeight = $('.site-header').offsetHeight;
-      // Mobile browser chrome can resize the visual viewport repeatedly while scrolling.
-      // Only rebuild the expensive canvas/WebGL surfaces for a real layout change.
-      if (force || widthChanged || (!matchMedia('(pointer:coarse)').matches && heightChanged)) {
+      // Safari's address bar changes viewport height continuously while scrolling.
+      // Lock scene geometry until width/orientation changes so sticky travel never collapses mid-gesture.
+      if (force || widthChanged) lockMobileSceneGeometry(true);
+      if (force || widthChanged || (!coarsePointer.matches && heightChanged)) {
         resizeMap();
         if (scene3D) scene3D.resize();
       }
@@ -1327,7 +1371,9 @@
       window.visualViewport.addEventListener('scroll', scheduleScenes, { passive: true });
       window.visualViewport.addEventListener('resize', scheduleScenes, { passive: true });
     }
-    mediaQuery.addEventListener('change', event => { reducedMotion = event.matches; if (scene3D) scene3D.setReducedMotion(reducedMotion); scheduleLayoutRefresh(true); });
+    const onMotionPreferenceChange = event => { reducedMotion = event.matches; if (scene3D) scene3D.setReducedMotion(reducedMotion); scheduleLayoutRefresh(true); };
+    if (mediaQuery.addEventListener) mediaQuery.addEventListener('change', onMotionPreferenceChange);
+    else if (mediaQuery.addListener) mediaQuery.addListener(onMotionPreferenceChange);
     document.documentElement.classList.add('js');
     if ('IntersectionObserver' in window) {
       const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); revealObserver.unobserve(entry.target); } }), { threshold: .1, rootMargin: '0px 0px -20px 0px' });
