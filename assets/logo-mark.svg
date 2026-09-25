@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Roatan.Design symbol</title>
+  <rect width="64" height="64" rx="16" fill="#173D3A"/>
+  <path d="M18 45V17h14c8 0 13 4 13 11s-5 11-13 11H18m15 0 12 9" fill="none" stroke="#F7F5EE" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13 52c8-5 15-5 23 0s15 5 23 0" fill="none" stroke="#73D1BC" stroke-width="3" stroke-linecap="round"/>
+</svg>

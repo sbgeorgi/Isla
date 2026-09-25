@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { copyFile, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import CleanCSS from 'clean-css';
 import { minify } from 'html-minifier-terser';
@@ -72,6 +72,12 @@ html = await minify(html, {
 });
 
 await writeFile(path.join(OUT, 'index.html'), html);
+for (const file of await readdir(path.join(ROOT, 'assets'))) {
+  await copyFile(path.join(ROOT, 'assets', file), path.join(ASSETS, file));
+}
+for (const file of (await readdir(ROOT)).filter(name => /^suite-\d\d\.html$/.test(name))) {
+  await copyFile(path.join(ROOT, file), path.join(OUT, file));
+}
 await writeFile(
   path.join(OUT, 'robots.txt'),
   'User-agent: *\nAllow: /\nSitemap: https://roatan.design/sitemap.xml\n'
@@ -81,7 +87,8 @@ await writeFile(
   '<?xml version="1.0" encoding="UTF-8"?>\n' +
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     '  <url><loc>https://roatan.design/</loc></url>\n' +
+    ['01', '02', '03', '04'].map(number => `  <url><loc>https://roatan.design/suite-${number}.html</loc></url>\n`).join('') +
     '</urlset>\n'
 );
 
-console.log(`Built dist/: index.html + assets/${cssName} + assets/${jsName}`);
+console.log(`Built dist/: homepage, suite pages, brand assets, assets/${cssName}, assets/${jsName}`);

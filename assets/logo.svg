@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 64" role="img" aria-labelledby="title desc">
+  <title id="title">Roatan.Design</title>
+  <desc id="desc">A custom R above a wave beside the Roatan.Design wordmark.</desc>
+  <rect width="64" height="64" rx="16" fill="#173D3A"/>
+  <path d="M18 45V17h14c8 0 13 4 13 11s-5 11-13 11H18m15 0 12 9" fill="none" stroke="#F7F5EE" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13 52c8-5 15-5 23 0s15 5 23 0" fill="none" stroke="#73D1BC" stroke-width="3" stroke-linecap="round"/>
+  <text x="82" y="46" fill="#173D3A" font-family="Arial,Helvetica,sans-serif" font-size="43" font-weight="700" letter-spacing="-2.5">Roatan<tspan fill="#188D83">.Design</tspan></text>
+</svg>
